@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Favicon and Entities task</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="icons/htm.png" type="image/png">
+	<style>
+	.label{
+	width:10%;
+	float:left;
+	}	
+	i{
+	float:left;
+	padding-right:10px;
+	}
+	
+	</style>
+</head>
+<body>
+<fieldset style="width:80%">
+<legend><h1>&#128229 Novell Services Login &#128188</h1></legend>
+	<form>
+		<div>
+			<i class="fa fa-user-circle" aria-hidden="true"></i>
+			<label for="userid" class="label"> Username:</label>
+			<input type="text" id="userid">
+		</div>
+		<div style="padding-top:5px">
+			<i class="fa fa-lock" aria-hidden="true"></i>
+			<label for="pwd" class="label">Password:</label>
+			<input type="password" id="pwd">
+		</div>
+		<br>
+		<div>
+			<i class="fa fa-globe" aria-hidden="true"></i>
+			<label for="city" class="label">City of Employment:</label>
+			<input type="text" id="city" >
+		</div>
+		<br>
+		<div>
+			<i class="fa fa-server" aria-hidden="true"></i>
+			<label for="server" class="label">Web server:</label>
+			<select id="server">
+			<option value="" disabled selected>--Choose a server--</option>
+			<option value="AWS">AWS</option>
+			<option value="Go-daddy">Go-daddy</option>
+			<option value="Hostinger">Hostinger</option>
+			</select>
+		</div>
+		<br>
+		<br>
+		
+		
+		<div>
+		<i class="fa fa-user-md" aria-hidden="true" style="padding-top:25px"></i>
+			<label for="role" class="label" style="padding-bottom:30px; padding-top:20px;">Please specify your role:</label>
+			<input  type="radio" name="role" value="Admin">
+			<label  for="role">Admin</label><br>
+			<input  type="radio" name="role" value="Engineer">
+			<label for="role">Engineer</label><br>
+			<input  type="radio" name="role" value="Manager">
+			<label for="role">Manager</label><br>
+			<input type="radio" name="role" value="Guest">
+			<label for="role">Guest</label>
+		</div>
+		<br>
+		<br>
+		<div>
+		<i class="fa fa-envelope-o" aria-hidden="true" style="padding-bottom:30px; padding-top:15px;"></i>
+		<label for="select" class="label" style="padding-bottom:30px; padding-top:10px;">Single Sign-on to the following:</label>
+		<input type="checkbox" id="option1" value="Mail">
+		<label for="option1">Mail</label><br>
+		<input type="checkbox" id="option2" value="Payroll">
+		<label  for="option2">Payroll</label><br>
+		<input type="checkbox" id="option3" value="Self-service">
+		<label  for="option3">Self-service</label>
+		</div>
+		<br>
+		<div style="padding-left:110px">
+		<input type="button" value="&#128229 Login">
+		<input type="reset" value="&#8635 reset">
+		</div>
+	</form>
+	</fieldset>
+</body>
+</html>
